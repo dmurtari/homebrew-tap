@@ -1,18 +1,8 @@
-# Dmurtari Tap
+# Taps
 
-## How do I install these formulae?
+## [ManyTime](https://codeberg.org/dmurtari/ManyTime)
 
-`brew install dmurtari/tap/<formula>`
-
-Or `brew tap dmurtari/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "dmurtari/tap"
-brew "<formula>"
+```sh
+brew tap dmurtari/tap https://codeberg.org/dmurtari/homebrew-tap
+brew install --cask dmurtari/tap/manytime
 ```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
