@@ -1,6 +1,6 @@
 cask "manytime" do
-  version "1.3.0"
-  sha256 "ad87ca0e39f520c6f8dcf36c886b4b96987228c6092336828940b0960c7e6130"
+  version "1.4.0"
+  sha256 "e30ca919a7cfe5e8a0ef5fd6eaad77ebebf8ff7593adb0e92b7aa4414672ea46"
 
   url "https://codeberg.org/dmurtari/ManyTime/releases/download/#{version}/ManyTime-#{version}.zip"
   name "ManyTime"
