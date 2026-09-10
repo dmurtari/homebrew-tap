@@ -10,11 +10,11 @@ cask "manytime" do
 
   app "ManyTime.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/ManyTime.app"]
-    system_command "/usr/bin/codesign",
-                   args: ["--force", "--deep", "--sign", "-", "#{appdir}/ManyTime.app"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/ManyTime.app"]
+      run "/usr/bin/codesign", args: ["--force", "--deep", "--sign", "-", "{{appdir}}/ManyTime.app"]
+    end
   end
 
   zap trash: "~/Library/Preferences/com.dmurtari.ManyTime.plist"
